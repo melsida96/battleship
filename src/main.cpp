@@ -9,13 +9,7 @@ int main()
 	initialize_matrix(size, sea);
 	int count = set_all_ships(sea);
 	print(size, sea);
-	while(count){
-		std::cout << "Please enter the coordinates of a field: ";
-		std::cin >> x >> y;
-		shoot(sea, x, y, count);
-		std::cout << std::endl;
-		}
-	std::cout << "The game is over. You win." << std::endl;
+	game(sea, count);
 	print_result_matrix(size, sea);
 	delete_matrix(sea, size);
 	return 0;

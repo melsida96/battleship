@@ -13,3 +13,4 @@ int set_all_ships(char**);
 int random_number();
 void print_result_matrix(const int, char**);
 void delete_matrix(char**, const int);
+void game(char**, int);

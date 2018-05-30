@@ -7,8 +7,8 @@ INCLUDE_PATH := -I./src
 CC		:= g++
 
 $(TARGET): $(OBJECT)
-	@mkdir bin
-	@mkdir obj
+	@mkdir -p bin
+	@mkdir -p obj
 	@$(CC) $(OBJECT) -o $(DIR_bin)
 	@mv src/main.o obj/main.o
 	@mv src/functions.o obj/functions.o

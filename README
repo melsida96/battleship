@@ -1,15 +1,61 @@
-# batlleship
 
-About:
-Project consisits of the following folders and documents: docs, src,  Doxyfile and makefile. In folder docs one can find all the documantation that is needed for this project (devspec, fspec, prd). Folder src contains main source code of the project.
+This is the README file of "Battleship" project developed by Melsida Miskaryan from Instigate Training Center.
 
-Short manual:
-After downloading the project open terminal, and enter "make" command. There will be created folders bin and obj. Directory obj will contain object files. Directory bin will contain an executable file named 'run'. Now run the executable file. Game will start. After finishing placement 4 ships the computer you must enter the coordinates of the field. You must guess all the fields where can be ships. Destroy them. The game will be over if there is no ships in the sea. In command line enter "make doxygen" and doxygen documentation will be created in docs folder. Besides, in battleship folder you can run "make clean" command which will delete bin, obj, Doxygen folders.
+CONTENTS
+        1. AUTHOR
+        2. INTRODUCTION
+        3. PREREQUISITES
+        4. DIRECTORY STRUCTURE
+        5. USAGE
+	6. DOCUMENTATION
+        
 
-The game:
-This project is a game called Battliship which is written in C++. The user must play with computer. 
-The game implements several basic features: 
-1) Creates the sea: 10x10 matrix in dynamic memory. 
-2) The program randomly generates coordinates, destinations, sizes of the ships and sets the ships in the sea.
-3) Providing a simple parameters based way of firing shoots for the console application.
-The game will end when all ships will be destroyed. 
+1. AUTHOR
+Melsida Miskaryan
+E-mail: melsida.miskaryan@gmail.com
+Tel: +374-94-57-89-36
+
+2. INTRODUCTION
+"Battleship" is a console game written in C++. It provides game between user and computer. Computer automatically generates the sea of the game. Then generates and sets ships in the sea. The count of ships is 4. Then computer will ask you to enter the coordinates of the field where can be a ship. Then you will see a message. If there is a ship in that location than output will be "The field was damaged". If there is no a ship in that location than output will be "The field is empty". The game will end if there is no ships in the sea. 
+
+3. PREREQUISITES
+The following third party tools should be installed before the
+compilation.
+
+Tools:
+g++
+doxygen
+make
+
+4. DIRECTORY STRUCTURE
+
+src/            - the source files of the project
+doc/	        - the documentation of the project.
+                  Please refer to "DOCUMENTATION" section for more details
+makefile        - top level makefile to build the project
+Doxyfile        - doxygen configuration for the documentation of the project
+
+After using command "make" will be generated bin/ and obj/ directories: 
+
+bin/ 		- executable file of project
+obj/		- generated object files of project
+
+5. USAGE
+
+Commands:
+"make"		- generates executable file of the project
+"make doxygen"  - generates doxygen documentation.
+"make clean"    - cleans up the generated files ann directories.
+
+To start the game use ./bin/run.
+
+6. DOCUMENTATION
+"make doxygen" command generates doxygen documentation.
+
+The documentation is located in the directory doc/.
+
+Doxygen also generates documentation from C++ code comments.
+
+To see the generated documentation use ./docs/doxygen/html/index.html.
+
+
